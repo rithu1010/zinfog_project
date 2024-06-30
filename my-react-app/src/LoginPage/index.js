@@ -80,12 +80,19 @@ function LoginPage() {
           >
             <img src={LoginImage1} style={{ height: "60px", width: "60px" }} />
           </Box>
-          <Typography
-            style={{ color: "#1F6CAB", fontWeight: "900", fontSize: "24px" }}
+        <Box
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "-3px",
+            }}
           >
-            {" "}
-            Report Downlad portal{" "}
-          </Typography>
+            <Typography
+              style={{ color: "#1F6CAB", fontWeight: "900", fontSize: "24px" }}
+            >
+              Report Downlad portal{" "}
+            </Typography>
+          </Box>
 
           <Grid container spacing={1}>
             <Grid item xs={12}>
