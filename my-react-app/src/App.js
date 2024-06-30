@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import ResponsiveAppBar from "./components/ResponsiveAppBar";
-import LoginPage from "./LoginPage /index";
+import LoginPage from "./LoginPage/index";
 import LandingPage from "./LandingPage";
 import Dashboard from "./Dashboard";
 // import Pricing from "./pages/Pricing";
