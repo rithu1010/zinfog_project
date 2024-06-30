@@ -249,7 +249,7 @@ function DataTable() {
                     }}
                     variant="outlined"
                     placeholder="Search..."
-                    label={Enter `${filterOptions.criteria.replace("_", " ")}`}
+                    label={`Enter ${filterOptions.criteria.replace("_", " ")}`}
                     name="value"
                     value={filterOptions.value}
                     onChange={handleFilterChange}
