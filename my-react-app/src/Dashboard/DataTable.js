@@ -213,14 +213,69 @@ function DataTable() {
             </Popover>
             <Box>
               <Box style={{ display: "flex" }}>
-                {filterOptions.criteria && (
+               {filterOptions.criteria && (
                   <TextField
-                    label={`Enter ${filterOptions.criteria.replace("_", " ")}`}
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "flex-end",
+                      marginTop: "8px",
+                      marginBottom: "2px",
+                      marginRight: "-14px",
+                      borderRadius: "30px",
+                      marginLeft: "18px",
+                      width: "100%",
+                      // paddingLeft: '200px',
+                      "& .MuiOutlinedInput-root": {
+                        background: "#fff",
+                        borderRadius: "25px",
+                        width: "400px",
+                        height: "42px",
+
+                        textAlign: "center",
+                        marginRight: "10px",
+                        "&:hover fieldset": {
+                          border: "1px solid #ADADAD",
+                        },
+                        "&.Mui-focused fieldset": {
+                          border: "1px solid #ADADAD",
+                        },
+                      },
+                      "& .MuiInputBase-input": {
+                        background: "#fff",
+                        borderRadius: "25px",
+                        height: "6px",
+                      },
+                    }}
                     variant="outlined"
+                    placeholder="Search..."
+                    label={Enter ${filterOptions.criteria.replace("_", " ")}}
                     name="value"
                     value={filterOptions.value}
                     onChange={handleFilterChange}
                     style={{ marginBottom: "10px", width: "100%" }}
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position="start">
+                          <IconButton
+                            type="button"
+                            sx={{
+                              "&.MuiButtonBase-root": {
+                                p: "10px",
+                                ml: 3,
+                                width: "19px",
+                                backgroundColor: "transparent",
+                                height: "19px",
+                                marginLeft: "0px",
+                              },
+                            }}
+                            aria-label="search"
+                          >
+                            <SearchIcon />
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
                   />
                 )}
               </Box>
