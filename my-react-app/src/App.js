@@ -18,6 +18,7 @@ function App() {
         <Route path="/blog" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/home" element={<LandingPage />} />
       </Routes>
     </Router>
   );
